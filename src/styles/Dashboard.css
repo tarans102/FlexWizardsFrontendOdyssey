@@ -18,7 +18,7 @@
     flex-direction: column;
     gap: 32px;
     padding: 24px;
-    background-color: rgb(230, 230, 230);
+    background-color: #e3def3;
     border-radius: 16px;
     border: 1px solid grey;
     box-shadow: 4px 4px 16px rgb(190, 190, 190);
