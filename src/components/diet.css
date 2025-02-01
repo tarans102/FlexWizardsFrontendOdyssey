@@ -104,7 +104,7 @@ h3 {
 }
 
 .Generate {
-    background-color: rgba(230, 230, 250, 0.7);
+    background-color: var(--primary-color);
     font-size: 20px;
     border-radius: 20px;
     margin-bottom: 50px;
