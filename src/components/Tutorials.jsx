@@ -2,6 +2,8 @@ import React from "react";
 import "../styles/Tutorials.css";
 import meditationImage from "../assets/meditation.png";
 
+// import Navbar from "./Navbar";
+
 const Tutorials = () => {
   return (
     <div className="tutorials-container">
@@ -67,5 +69,4 @@ const Tutorials = () => {
     </div>
   );
 };
-
 export default Tutorials;

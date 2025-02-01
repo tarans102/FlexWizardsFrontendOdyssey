@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-    const [sidebarOpen, setSidebarOpen] = useState(1);
+    const [sidebarOpen, setSidebarOpen] = useState(0);
     const openSidebar = () => {
         setSidebarOpen(1);
     };
     const closeSidebar = () => {
         setSidebarOpen(0);
     };
+    const [active, setActive] = useState(1);
     return (
         <>
             <div className="navbar">
@@ -18,36 +20,96 @@ const Navbar = () => {
                 </div>
                 <div className="logo">LOGO</div>
                 <div className="navbarLinks">
-                    <a href="/dashboard" className="navbarLink navActive">
+                    <NavLink
+                        to="/dashboard"
+                        className={
+                            active == 1 ? "navbarLink navActive" : "navbarLink"
+                        }
+                        onClick={() => {
+                            setActive(1);
+                            closeSidebar();
+                        }}
+                    >
                         Dashboard
-                    </a>
-                    <a href="/diet" className="navbarLink">
+                    </NavLink>
+                    <NavLink
+                        to="/diet"
+                        className={
+                            active == 2 ? "navbarLink navActive" : "navbarLink"
+                        }
+                        onClick={() => {
+                            setActive(2);
+                            closeSidebar();
+                        }}
+                    >
                         Diet
-                    </a>
-                    <a href="/tutorials" className="navbarLink">
+                    </NavLink>
+                    <NavLink
+                        to="/tutorials"
+                        className={
+                            active == 3 ? "navbarLink navActive" : "navbarLink"
+                        }
+                        onClick={() => {
+                            setActive(3);
+                            closeSidebar();
+                        }}
+                    >
                         Tutorials
-                    </a>
-                    <a href="/community" className="navbarLink">
+                    </NavLink>
+                    <NavLink
+                        to="/community"
+                        className={
+                            active == 4 ? "navbarLink navActive" : "navbarLink"
+                        }
+                        onClick={() => {
+                            setActive(4);
+                            closeSidebar();
+                        }}
+                    >
                         Community
-                    </a>
+                    </NavLink>
                 </div>
             </div>
             <div
                 className="sidebar"
                 style={{ left: sidebarOpen ? "0%" : "-100%" }}
             >
-                <a href="" className="navbarLink navActive">
+                <NavLink
+                    to="/dashboard"
+                    className={
+                        active == 1 ? "navbarLink navActive" : "navbarLink"
+                    }
+                    onClick={() => setActive(1)}
+                >
                     Dashboard
-                </a>
-                <a href="" className="navbarLink">
-                    Compete
-                </a>
-                <a href="" className="navbarLink">
-                    Videos
-                </a>
-                <a href="" className="navbarLink">
-                    About
-                </a>
+                </NavLink>
+                <NavLink
+                    to="/diet"
+                    className={
+                        active == 2 ? "navbarLink navActive" : "navbarLink"
+                    }
+                    onClick={() => setActive(2)}
+                >
+                    Diet
+                </NavLink>
+                <NavLink
+                    to="/tutorials"
+                    className={
+                        active == 3 ? "navbarLink navActive" : "navbarLink"
+                    }
+                    onClick={() => setActive(3)}
+                >
+                    Tutorials
+                </NavLink>
+                <NavLink
+                    to="/community"
+                    className={
+                        active == 4 ? "navbarLink navActive" : "navbarLink"
+                    }
+                    onClick={() => setActive(4)}
+                >
+                    Community
+                </NavLink>
                 <div className="sidebarClose">
                     <IoMdClose size={40} onClick={closeSidebar} />
                 </div>
