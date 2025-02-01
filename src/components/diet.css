@@ -9,7 +9,17 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:orange;
+    background-color:var(--primary-color);
+    width:80vw;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.overall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(218, 217, 126);
 }
 
 h3{
@@ -18,16 +28,19 @@ h3{
 .cal{
     width:50px;
     margin:5px;
+    background-color:  rgb(218, 217, 126);
 }
 .meal{
+    background-color:  rgb(218, 217, 126);
     width:40px;
     margin:7px;
 }
 .Generate{
-    background-color: azure;
+    background-color:  rgb(218, 217, 126);
     font-size: 20px;
     border-radius: 20px;
     margin-bottom: 50px;
+    padding: 10px;
 }
 
 .dietList{
@@ -41,8 +54,23 @@ h3{
     align-items: center;
     justify-content: center;
     margin:30px;
-    background-color: black;
-    color: azure;
+    background-color:  rgb(218, 217, 126);
+    color: black;
     width: 100px;
     height: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+}
+.nameOfDiet:hover{
+    transform: scale(1.2);
+}
+
+h2{
+    margin: 5px;
+}
+
+.item{
+    margin-left: 50px;
 }
