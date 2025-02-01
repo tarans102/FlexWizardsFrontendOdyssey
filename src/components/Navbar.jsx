@@ -18,7 +18,7 @@ const Navbar = () => {
                 <div className="navbarHamburger" onClick={openSidebar}>
                     <GiHamburgerMenu size={40} />
                 </div>
-                <div className="logo">LOGO</div>
+                <div className="logo">ENDURE</div>
                 <div className="navbarLinks">
                     <NavLink
                         to="/dashboard"
