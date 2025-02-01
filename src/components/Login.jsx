@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import '../styles/Login.css'; 
+import React, { useState } from "react";
+import "../styles/Login.css";
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -10,7 +11,7 @@ const Login = () => {
   };
 
   return (
-    <body>
+    <div className="wrapper">
       <div className="login-container">
         <h2>Login</h2>
         <form onSubmit={handleLogin}>
@@ -36,7 +37,7 @@ const Login = () => {
           Don't have an account? <a href="#">Sign up</a>
         </p>
       </div>
-    </body>
+    </div>
   );
 };
 
