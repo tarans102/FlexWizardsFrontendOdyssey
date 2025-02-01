@@ -6,6 +6,7 @@ import { IoMdHeart } from "react-icons/io";
 import { IoFootsteps } from "react-icons/io5";
 import { TbRulerMeasure } from "react-icons/tb";
 import DashboardUserStat from "../components/dashboardUserStat";
+import Navbar from "../components/Navbar";
 import WorkoutDetail from "../components/WorkoutDetail";
 import "../styles/Dashboard.css";
 import "../styles/Navbar.css";
@@ -67,6 +68,7 @@ const Dashboard = () => {
     ]);
     return (
         <>
+            <Navbar activeElem={1} />
             <div className="dashboardMainContainer">
                 <div className="dashboardContainer">
                     <div className="dashboardCard">

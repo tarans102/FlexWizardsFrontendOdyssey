@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ activeElem }) => {
     const [sidebarOpen, setSidebarOpen] = useState(0);
     const openSidebar = () => {
         setSidebarOpen(1);
@@ -11,7 +11,7 @@ const Navbar = () => {
     const closeSidebar = () => {
         setSidebarOpen(0);
     };
-    const [active, setActive] = useState(1);
+    const [active, setActive] = useState(activeElem);
     return (
         <>
             <div className="navbar">

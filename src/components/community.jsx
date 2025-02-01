@@ -3,10 +3,12 @@ import { AiOutlineCalendar, AiOutlineStar } from "react-icons/ai";
 import { FaRunning, FaUserPlus } from "react-icons/fa";
 import { MdEventNote, MdRateReview } from "react-icons/md";
 import "./community.css";
+import Navbar from "./Navbar";
 
 const Community = () => {
     return (
         <>
+            <Navbar activeElem={4} />
             <div className="wrapper3">
                 <h1 className="mainTitle">Community & Challenges</h1>
 
