@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import Community from "./components/community.jsx";
 import Diet from "./components/diet.jsx";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
-import Tutorials from "./components/Tutorials";
+import Login from "./components/Login.jsx";
+import Signup from "./components/Signup.jsx";
+import Tutorials from "./components/Tutorials.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import "./styles/base.css";
 

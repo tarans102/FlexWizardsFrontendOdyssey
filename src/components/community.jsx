@@ -3,7 +3,7 @@ import { AiOutlineCalendar, AiOutlineStar } from "react-icons/ai";
 import { FaRunning, FaUserPlus } from "react-icons/fa";
 import { MdEventNote, MdRateReview } from "react-icons/md";
 import "./community.css";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar.jsx";
 
 const Community = () => {
     return (

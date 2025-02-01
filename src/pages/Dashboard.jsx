@@ -5,9 +5,9 @@ import { GiMeditation } from "react-icons/gi";
 import { IoMdHeart } from "react-icons/io";
 import { IoFootsteps } from "react-icons/io5";
 import { TbRulerMeasure } from "react-icons/tb";
-import DashboardUserStat from "../components/dashboardUserStat";
-import Navbar from "../components/Navbar";
-import WorkoutDetail from "../components/WorkoutDetail";
+import DashboardUserStat from "../components/dashboardUserStat.jsx";
+import Navbar from "../components/Navbar.jsx";
+import WorkoutDetail from "../components/WorkoutDetail.jsx";
 import "../styles/Dashboard.css";
 import "../styles/Navbar.css";
 const Dashboard = () => {

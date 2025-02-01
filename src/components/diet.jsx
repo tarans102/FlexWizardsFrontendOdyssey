@@ -1,5 +1,5 @@
 import "./diet.css";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar.jsx";
 
 function Diet() {
     return (
