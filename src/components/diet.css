@@ -1,76 +1,160 @@
-h1{
+.mealDetails {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.mealTitle {
+    font-size: 36px;
+    color: #4B0082; /* Deep lavender */
+    margin-bottom: 20px;
+}
+
+.mealContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.mealCard {
+    background: rgba(230, 230, 250, 0.8); /* Light lavender with transparency */
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mealCard:hover {
+    transform: scale(1.05);
+}
+
+.mealCard h2 {
+    color: #4B0082;
+    font-size: 22px;
+}
+
+.calories {
+    font-weight: bold;
+    margin: 10px 0;
+    color: black;
+}
+
+.mealCard ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mealCard li {
+    background: white;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 50px;
+    color: #4B0082; /* Deep lavender for contrast */
 }
-.wrap{
-    display:flex;
+
+.wrap {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:var(--primary-color);
-    width:80vw;
+    background-color: rgba(230, 230, 250, 0.8); /* Light lavender with slight transparency */
+    width: 80vw;
     border-radius: 20px;
     margin-bottom: 50px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-.overall{
+
+.overall {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(218, 217, 126);
+    background-color: rgba(245, 245, 255, 0.7); /* Very light white-lavender tint */
+    padding: 20px;
+    border-radius: 15px;
 }
 
-h3{
-    display:block;
+h3 {
+    display: block;
+    color: #4B0082; /* Lavender tone */
 }
-.cal{
-    width:50px;
-    margin:5px;
-    background-color:  rgb(218, 217, 126);
+
+.cal, .meal {
+    width: 50px;
+    margin: 5px;
+    background-color: rgba(230, 230, 250, 0.7);
+    border-radius: 10px;
+    border: 1px solid #4B0082;
+    text-align: center;
 }
-.meal{
-    background-color:  rgb(218, 217, 126);
-    width:40px;
-    margin:7px;
-}
-.Generate{
-    background-color:  rgb(218, 217, 126);
+
+.Generate {
+    background-color: rgba(255, 255, 255, 0.8);
     font-size: 20px;
     border-radius: 20px;
     margin-bottom: 50px;
     padding: 10px;
+    color: #4B0082;
+    width: 200px;
+    border: 2px solid #4B0082;
+    transition: all 0.3s ease;
 }
 
-.dietList{
+.Generate:hover {
+    background-color: #4B0082;
+    color: white;
+    transform: scale(1.05);
+}
+
+.dietList {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.nameOfDiet{
-    display:flex;
+
+.nameOfDiet {
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin:30px;
-    background-color:  rgb(218, 217, 126);
+    margin: 30px;
+    background-color: rgba(230, 230, 250, 0.8);
     color: black;
     width: 100px;
     height: 50px;
     border-width: 2px;
     border-style: solid;
-    border-color: black;
+    border-color: #4B0082;
     border-radius: 20px;
+    transition: all 0.3s ease;
 }
-.nameOfDiet:hover{
+
+.nameOfDiet:hover {
     transform: scale(1.2);
+    background-color: #4B0082;
+    color: white;
 }
 
-h2{
+h2 {
     margin: 5px;
+    color: #4B0082;
 }
 
-.item{
+.item {
     margin-left: 50px;
+    color: black;
 }
