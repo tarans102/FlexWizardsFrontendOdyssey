@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { FaFire, FaMoon } from "react-icons/fa";
+import { FaFire, FaMoon, FaRunning } from "react-icons/fa";
+import { FaPersonSwimming } from "react-icons/fa6";
 import { GiMeditation } from "react-icons/gi";
 import { IoMdHeart } from "react-icons/io";
 import { IoFootsteps } from "react-icons/io5";
+import { TbRulerMeasure } from "react-icons/tb";
 import DashboardUserStat from "../components/dashboardUserStat";
-import Navbar from "../components/Navbar";
+import WorkoutDetail from "../components/WorkoutDetail";
 import "../styles/Dashboard.css";
 import "../styles/Navbar.css";
 const Dashboard = () => {
@@ -13,6 +15,11 @@ const Dashboard = () => {
             icon: <IoFootsteps size={24} />,
             stat: "Steps",
             value: 9000,
+        },
+        {
+            icon: <TbRulerMeasure size={24} />,
+            stat: "Distance",
+            value: "2.47km",
         },
         {
             icon: <FaFire size={24} />,
@@ -35,9 +42,31 @@ const Dashboard = () => {
             value: "7hrs 28mins",
         },
     ]);
+
+    const [workouts, setworkouts] = useState([
+        {
+            icon: <FaRunning size={24} />,
+            type: "Running",
+            stats: [
+                { stat: "Distance", value: "20km" },
+                { stat: "Avg. Speed", value: "25km/hr" },
+                { stat: "Calories", value: "210kcal" },
+            ],
+            date: "31st January 2025",
+        },
+        {
+            icon: <FaPersonSwimming size={24} />,
+            type: "Swimming",
+            stats: [
+                { stat: "Distance", value: "2km" },
+                { stat: "Avg. Speed", value: "12.5km/hr" },
+                { stat: "Calories", value: "532kcal" },
+            ],
+            date: "31st January 2025",
+        },
+    ]);
     return (
         <>
-            <Navbar />
             <div className="dashboardMainContainer">
                 <div className="dashboardContainer">
                     <div className="dashboardCard">
@@ -61,6 +90,12 @@ const Dashboard = () => {
                     </div>
                     <div className="dashboardCard">
                         <div className="dashboardWorkoutTitle">Workouts</div>
+                        {workouts.map((workout) => (
+                            <WorkoutDetail
+                                workout={workout}
+                                key={workout.type}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>

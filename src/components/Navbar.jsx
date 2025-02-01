@@ -18,17 +18,17 @@ const Navbar = () => {
                 </div>
                 <div className="logo">LOGO</div>
                 <div className="navbarLinks">
-                    <a href="" className="navbarLink navActive">
+                    <a href="/dashboard" className="navbarLink navActive">
                         Dashboard
                     </a>
-                    <a href="" className="navbarLink">
-                        Compete
+                    <a href="/diet" className="navbarLink">
+                        Diet
                     </a>
-                    <a href="" className="navbarLink">
-                        Videos
+                    <a href="/tutorials" className="navbarLink">
+                        Tutorials
                     </a>
-                    <a href="" className="navbarLink">
-                        About
+                    <a href="/community" className="navbarLink">
+                        Community
                     </a>
                 </div>
             </div>
