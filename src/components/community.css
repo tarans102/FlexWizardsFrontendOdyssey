@@ -7,11 +7,23 @@
     margin: auto;
     padding: 20px;
 }
+body {
+    background-color: #D8BFD8;
+}
+
+
+/* Main Page Title */
+.mainTitle {
+    font-size: 32px;
+    color: #4B0082; /* Deep lavender */
+    margin: 20px 0;
+    text-align: center;
+}
 
 /* Section Titles */
 .sectionTitle {
     font-size: 28px;
-    color: #4B0082; /* Deep lavender */
+    color: #4B0082;
     margin: 20px 0;
 }
 
@@ -40,6 +52,23 @@
     width: 200px;
     height: 200px;
     border-radius: 10px;
+}
+
+/* Nearby Events Section */
+.nearbyEvents {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.eventCard {
+    background: rgba(230, 230, 250, 0.9);
+    padding: 12px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Discover People Section */
