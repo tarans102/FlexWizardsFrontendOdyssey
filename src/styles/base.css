@@ -1,0 +1,15 @@
+:root {
+    font-family: Poppins;
+    --primary-color: #E67F0D;
+    --accent-color: #FE4E00;
+}
+
+body {
+    margin: 0;
+}
+
+@media (pointer:coarse) {
+    :root {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
